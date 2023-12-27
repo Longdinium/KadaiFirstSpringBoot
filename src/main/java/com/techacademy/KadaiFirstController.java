@@ -34,7 +34,7 @@ public class KadaiFirstController {
         int dayInt = Integer.parseInt(day); 
 
         Calendar cl = Calendar.getInstance();
-        cl.set(yearInt, monthInt, dayInt);
+        cl.set(yearInt, monthInt-1, dayInt);
         int dayOfWeek = cl.get(Calendar.DAY_OF_WEEK);
         String res = null;
         switch(dayOfWeek) {
